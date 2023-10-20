@@ -2,13 +2,13 @@
 # Remap the raw Qwerty keyboard layout to Colemak in MS Windows via the registry. 
 
 
-In MS Windows system, we can modify the layout and mapping relationship of keyboard keys through 'Scancode Map'. So we can use it to create our own personalized keyboard layout.
+In MS Windows system, we can modify the layout and mapping relationship of keyboard keys through `Scancode Map`. So we can use it to create our own personalized keyboard layout.
 
 Colemak is a more efficient and labor-saving English typing keyboard layout, using it allows us to type in English more quickly. Its layout diagram about looks like this:
 
 ![](https://colemak.com/wiki/images/6/6c/Colemak2.png)
 
-In addition to modifying the registry, of course, you can also use Autohotkey, PowerToys and other tools to modify the mapping relationship of the keyboard, but the disadvantage of this type of method is that it cannot be done once and for all, and must rely on the startup of the software or run the relevant scripts to take effect. And if you play fast, it will be easy to have sticky keys, that is, the program does not have time to process the remapped keys, resulting in the original keys that continue to trigger. There is also the key modified in this way may not take effect on the lock screen, and it must wait for the system to enter the desktop to take effect, which is not good to use. However, by setting the registry's 'Scancode Map', it is possible to permanently modify the keyboard layout or remap the keys, and it is also possible to completely avoid sticky keys. So, using this principle, we can remap QWERTY to Colemak's keyboard layout by setting the 'Scancode Map' value of the registry.
+In addition to modifying the registry, of course, you can also use Autohotkey, PowerToys and other tools to modify the mapping relationship of the keyboard, but the disadvantage of this type of method is that it cannot be done once and for all, and must rely on the startup of the software or run the relevant scripts to take effect. And if you play fast, it will be easy to have sticky keys, that is, the program does not have time to process the remapped keys, resulting in the original keys that continue to trigger. There is also the key modified in this way may not take effect on the lock screen, and it must wait for the system to enter the desktop to take effect, which is not good to use. However, by setting the registry's `Scancode Map`, it is possible to permanently modify the keyboard layout or remap the keys, and it is also possible to completely avoid sticky keys. So, using this principle, we can remap QWERTY to Colemak's keyboard layout by setting the 'Scancode Map' value of the registry.
 
 The registry code that remaps to the Colemak keyboard layout is as follows:
 
@@ -76,5 +76,5 @@ Windows Registry Editor Version 5.00
 # How to use
 Just save the above code to a file with the suffix '.reg' or download the `qwerty2colemak.reg` file from this  repository, then double-click to run it to complete the modification, and restart the computer after success.
 
-If you want to return to the original keyboard layout, simply open the Registry Editor and find the Scancode Map under 'HKEY_LOCAL_MACHINESYSTEMCurrentControlSetControlKeyboard Layout', and then restart your computer.
+If you want to return to the original keyboard layout, simply open the Registry Editor and find the `Scancode Map` under `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout`, and then restart your computer.
 
