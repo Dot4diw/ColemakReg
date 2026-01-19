@@ -77,7 +77,7 @@ Windows Registry Editor Version 5.00
 Just save the above code to a file with the suffix '.reg' or download the `qwerty2colemak.reg` file from this  repository, then double-click to run it to complete the modification, and restart the computer after success.
 
 ## How to restore the original keyboard layout
-1. Open the Registry Editor (regedit.exe)
-2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout`
-3. In the right pane, locate and delete the "Scancode Map" entry
-4. Close the Registry Editor and restart your computer
+1. Open the Registry Editor (regedit.exe).
+2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout`.
+3. In the right pane, locate and delete the "Scancode Map" entry.
+4. Close the Registry Editor and restart your computer.
