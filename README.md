@@ -73,10 +73,10 @@ Windows Registry Editor Version 5.00
 ;; End code
 00,00,00,00
 ```
-# How to remap to the colemak layout
+## How to remap to the colemak layout
 Just save the above code to a file with the suffix '.reg' or download the `qwerty2colemak.reg` file from this  repository, then double-click to run it to complete the modification, and restart the computer after success.
 
-# How to restore the original keyboard layout
+## How to restore the original keyboard layout
 1. Open the Registry Editor (regedit.exe)
 2. Navigate to `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Keyboard Layout`
 3. In the right pane, locate and delete the "Scancode Map" entry
